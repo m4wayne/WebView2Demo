@@ -25,7 +25,7 @@ namespace WebView2Demo
             //options.AdditionalBrowserArguments = "--no-proxy-server";
 
 #if FIXED_RUNTIME
-            string runtimeDir = @$"{Application.StartupPath}\runtimes\win-x64\fixed.109.0.1518.78.x64";
+            string runtimeDir = "";
             Debug.Assert(!string.IsNullOrEmpty(runtimeDir), "You need to set the WebView2 Runtime fixed version path.");
             Debug.Assert(Directory.Exists(runtimeDir), "WebView2 Runtime fixed version path not exists.");
 
